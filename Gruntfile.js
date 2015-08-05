@@ -14,7 +14,7 @@ module.exports = function(grunt){
           sourcemap: 'none',
         }, // options
         files: {
-          'compiled/style.css': 'sass/style.scss'
+          'style-human.css': 'sass/style.scss'
         } // files
       }, // dev
       dist: {
@@ -23,7 +23,7 @@ module.exports = function(grunt){
           sourcemap: 'none',
         }, // options
         files: {
-          'compiled/style-min.css': 'sass/style.scss'
+          'style.css': 'sass/style.scss'
         } // files
       } // dist
     }, // Sass task
