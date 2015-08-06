@@ -42,7 +42,18 @@ module.exports = function(grunt){
         src: 'compiled/*.css',
         dest: ''
       } // multiple files
-    }, //autoprefixer
+    }, // autoprefixer
+
+    /**
+    * Uglify task
+    */
+    uglify: {
+        my_target: {
+            files: {
+                'script.js' : ['js/*.js']
+            } // files
+        } // my target
+    }, // uglify
 
     /**
     *Watch task
@@ -59,6 +70,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('default',['watch']);
 
 } // module.exports
