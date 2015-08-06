@@ -14,7 +14,7 @@ module.exports = function(grunt){
           sourcemap: 'none',
         }, // options
         files: {
-          'style-human.css': 'sass/style.scss'
+          'compiled/style-human.css': 'sass/style.scss'
         } // files
       }, // dev
       dist: {
@@ -23,10 +23,26 @@ module.exports = function(grunt){
           sourcemap: 'none',
         }, // options
         files: {
-          'style.css': 'sass/style.scss'
+          'compiled/style.css': 'sass/style.scss'
         } // files
       } // dist
     }, // Sass task
+
+    /**
+    * autoprefixer task
+    */
+    autoprefixer:{
+      options: {
+        browsers: ['last 2 versions']
+      }, // options
+      //prefix all files
+      multiple_files: {
+        expand: true,
+        flatten: true,
+        src: 'compiled/*.css',
+        dest: ''
+      } // multiple files
+    }, //autoprefixer
 
     /**
     *Watch task
@@ -34,7 +50,7 @@ module.exports = function(grunt){
     watch: {
       css: {
         files: '**/*.scss',
-        tasks: ['sass']
+        tasks: ['sass','autoprefixer']
       } // css
     } // watch
 
@@ -42,6 +58,7 @@ module.exports = function(grunt){
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.registerTask('default',['watch']);
 
 } // module.exports
