@@ -162,7 +162,12 @@ textarea {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both;
+  clear: right;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: #222;
+  -ms-word-break: break-word;
+  word-break: break-word;
 }
 
 p {
