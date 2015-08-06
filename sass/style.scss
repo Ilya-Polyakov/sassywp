@@ -24,6 +24,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize or Reset
+# Variables and Mixins
 # Typography
 # Elements
 # Forms
@@ -42,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-
+# Layouts
 
 /*--------------------------------------------------------------
 # Normalize or Reset
@@ -51,7 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "reset";
 
 /*--------------------------------------------------------------
-# variabels and mixins
+# variables and mixins
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
@@ -113,7 +114,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media/media";
 
 /*--------------------------------------------------------------
-# flex
+# layout
 --------------------------------------------------------------*/
 
-//@import "layout/flex";
+@import "layout/content-sidebar";

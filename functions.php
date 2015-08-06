@@ -115,6 +115,8 @@ add_action( 'widgets_init', 'underscoresass_widgets_init' );
  */
 function underscoresass_scripts() {
 	wp_enqueue_style( 'underscoresass-style', get_stylesheet_uri() );
+        
+                  //wp_enqueue_style('underscoresass-content-sidebar', get_template_directory_uri() . 'style.css');
 
 	wp_enqueue_style('underscoresass-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:400,100,400italic,700,900italic,900|PT+Serif:400,400italic,700,700italic');
             

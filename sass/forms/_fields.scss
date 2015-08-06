@@ -25,3 +25,35 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+
+
+/* CODE SNIPPET FROM LYNDA
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    padding: 8px;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    border: 1px solid #ccc;
+}
+                    
+a {
+    text-decoration: none;	
+    color: #000;
+    color: hsl(0, 0%, 0%);    
+}
+
+a:visited {
+    color: #333;
+    color: hsl(0, 0%, 20%);
+}
+
+a:hover,
+a:focus,
+a:active { 
+    text-decoration: underline; 
+}*/
