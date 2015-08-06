@@ -6,7 +6,7 @@
 
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
-                  background: $blue; 
+                  background: $color_site-main; 
 }
 
 .site-content .widget-area {
@@ -14,6 +14,7 @@
                   padding: 4rem;
 	overflow: hidden;
 	width: $size__site-sidebar;
+                  background: $color__sidebar;
 }
 
 .site-footer {

@@ -147,6 +147,8 @@ a img {
 /*--------------------------------------------------------------
 # variables and mixins
 --------------------------------------------------------------*/
+/*Colors*/
+/*Buttons*/
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -301,7 +303,7 @@ input[type="submit"] {
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
   background: #3c3c3c;
-  color: #F1F1F1;
+  color: #147FD7;
   font-size: 18px;
   font-size: 1.8rem;
   font-family: "Lato", sans-serif;
@@ -749,7 +751,7 @@ object {
 
 .site-main {
   margin: 0 380px 0 0;
-  background: #147FD7;
+  background: #F1F1F1;
 }
 
 .site-content .widget-area {
@@ -757,6 +759,7 @@ object {
   padding: 4rem;
   overflow: hidden;
   width: 380px;
+  background: #147FD7;
 }
 
 .site-footer {
