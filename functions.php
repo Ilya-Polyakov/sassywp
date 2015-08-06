@@ -72,10 +72,10 @@ function underscoresass_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'underscoresass_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
+                //	add_theme_support( 'custom-background', apply_filters( 'underscoresass_custom_background_args', array(
+                //		'default-color' => 'ffffff',
+                //		'default-image' => '',
+                //	) ) );
 }
 endif; // underscoresass_setup
 add_action( 'after_setup_theme', 'underscoresass_setup' );
@@ -116,7 +116,11 @@ add_action( 'widgets_init', 'underscoresass_widgets_init' );
 function underscoresass_scripts() {
 	wp_enqueue_style( 'underscoresass-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'underscoresass-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+	wp_enqueue_style('underscoresass-google-fonts', 'http://fonts.googleapis.com/css?family=Lato:400,100,400italic,700,900italic,900|PT+Serif:400,400italic,700,700italic');
+            
+                  wp_enqueue_style('underscoresass-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+        
+                  wp_enqueue_script( 'underscoresass-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'underscoresass-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
