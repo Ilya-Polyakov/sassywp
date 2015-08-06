@@ -88,7 +88,7 @@ add_action( 'after_setup_theme', 'underscoresass_setup' );
  * @global int $content_width
  */
 function underscoresass_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'underscoresass_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'underscoresass_content_width', 600 );
 }
 add_action( 'after_setup_theme', 'underscoresass_content_width', 0 );
 
