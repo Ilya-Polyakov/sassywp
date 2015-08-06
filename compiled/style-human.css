@@ -157,7 +157,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "PT Serif", serif;
   font-size: 18px;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -230,7 +230,7 @@ html {
 }
 
 body {
-  background: eggplant;
+  background: #F1F1F1;
   /* Fallback for when there is no custom background color defined. */
 }
 
