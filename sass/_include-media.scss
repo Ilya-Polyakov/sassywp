@@ -362,6 +362,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
     @return map-get($media-expressions, $expression);
   }
 
+ 
   $operator: get-expression-operator($expression);
   $dimension: get-expression-dimension($expression, $operator);
   $prefix: get-expression-prefix($operator);
