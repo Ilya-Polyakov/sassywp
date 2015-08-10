@@ -12,6 +12,11 @@
                   background: $color__sidebar;
 }
 
+.site-content .widget-area {
+    h1,h2,h3,h4,h5,a,p, li,table{
+        color: $color__sidebar-txt;
+    }
+}
 
 .site-footer {
 	clear: both;

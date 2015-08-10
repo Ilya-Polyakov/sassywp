@@ -13,8 +13,15 @@ $color__background-hr: #ccc;
 
 /*Structure*/
 
+
 $color_site-main: $lightgrey;
 $color__sidebar: darken($blue, 20);
+$color__header: $blue;
+
+/*Nav*/
+$color__mainnav: $darkgrey;
+$color__navtext: $lightgrey;
+
 
 /*Buttons*/
 
@@ -28,7 +35,7 @@ $color__background-ins: #fff9c0;
 /*type*/
 
 $color__headings: $black;
-
+$color__sidebar-txt: $lightgrey;
 
 
 $color__text-screen: #21759b;
