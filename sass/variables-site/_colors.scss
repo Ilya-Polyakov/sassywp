@@ -14,7 +14,7 @@ $color__background-hr: #ccc;
 /*Structure*/
 
 $color_site-main: $lightgrey;
-$color__sidebar: $blue;
+$color__sidebar: darken($blue, 20);
 
 /*Buttons*/
 
@@ -23,6 +23,12 @@ $color__bg-hvr-button: $black;
 $color__button-text: $blue;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
+
+
+/*type*/
+
+$color__headings: $black;
+
 
 
 $color__text-screen: #21759b;
