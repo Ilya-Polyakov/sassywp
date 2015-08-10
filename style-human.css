@@ -421,71 +421,6 @@ a:focus {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  position: relative;
-  float: left;
-  width: 100%;
-  display: block;
-  clear: both;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  background: #333;
-}
-.main-navigation a {
-  display: block;
-  padding: 1.3em 1em;
-  font-size: 14px;
-  font-size: 1.4rem;
-  text-decoration: none;
-  line-height: 1.3em;
-  color: #F1F1F1;
-}
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-.main-navigation li:hover {
-  color: #fff;
-  color: white;
-  background: #4d4d4d;
-}
-.main-navigation ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-}
-.main-navigation ul ul {
-  position: absolute;
-  left: 0;
-  z-index: 99999;
-  display: none;
-  float: left;
-  padding: 0;
-  background: red;
-}
-.main-navigation ul ul ul {
-  left: 100%;
-  top: 0;
-}
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  left: 100%;
-}
-.main-navigation ul ul a {
-  width: 200px;
-}
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-  left: auto;
-}
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-.main-navigation a {
-  display: block;
-  text-decoration: none;
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -527,10 +462,9 @@ a:focus {
   width: 100%;
   display: block;
   clear: both;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  background: #313131;
-  background: #303030;
+  background: #333;
 }
 
 .main-navigation ul {
@@ -551,8 +485,7 @@ a:focus {
   font-size: 1.4rem;
   text-decoration: none;
   line-height: 1.3em;
-  color: white;
-  color: white;
+  color: #F1F1F1;
 }
 
 .main-navigation ul ul {
@@ -562,7 +495,6 @@ a:focus {
   display: none;
   float: left;
   padding: 0;
-  background: #4d4d4d;
   background: #4d4d4d;
 }
 
@@ -576,15 +508,12 @@ a:focus {
 }
 
 .main-navigation li:hover > a {
-  color: #fff;
-  color: white;
-  background: #4d4d4d;
+  color: #F1F1F1;
   background: #4d4d4d;
 }
 
 .main-navigation ul ul a:hover {
-  background: #313131;
-  background: #303030;
+  background: #666666;
 }
 
 .main-navigation ul li:hover > ul {
@@ -595,22 +524,18 @@ a:focus {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-  background: white;
-  color: #313131;
-  color: #303030;
+  background: #cccccc;
+  color: #252525;
 }
 
 .main-navigation .current_page_ancestor {
-  background: #4d4d4d;
-  background: #4d4d4d;
+  background: #666666;
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
-  color: #fff;
-  color: white;
-  background: #313131;
-  background: #303030;
+  color: #F1F1F1;
+  background: #333;
 }
 
 /*--------------------------------------------------------------

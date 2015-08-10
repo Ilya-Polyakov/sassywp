@@ -1,94 +1,3 @@
-.main-navigation {
-                position: relative;
-                float: left;
-                width: 100%;
-                display: block;
-                clear: both;
-                font-family: $font__secondary;
-                text-transform: uppercase;
-                background: $color__mainnav;
-                a{
-                    display: block;
-                    padding: 1.3em 1em;
-                    font-size: 14px;
-                    font-size: 1.4rem;
-                    text-decoration: none;
-                    line-height: 1.3em;
-                    color: $color__navtext;
-                }
-                li {
-                        float: left;
-                        position: relative;
-                    &:hover{
-                        color: #fff;
-                        color: hsl(0, 0%, 100%);
-                        background: lighten($color__mainnav, 10);
-
-                    }
-                }
-	ul {
-                                    list-style: none;
-                                    margin: 0;
-                                    padding-left: 0;
-
-		ul {
-                                                position: absolute;
-                                                left: 0;
-                                                z-index: 99999;
-                                                display: none;
-                                                float: left;
-                                                padding: 0;
-                                                background: red;
-
-			ul {
-                                                                left: 100%;
-                                                                top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
-}
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -134,10 +43,9 @@
     width: 100%;
     display: block;
     clear: both;
-    font-family: 'Lato', sans-serif;
+    font-family: $font__secondary;
     text-transform: uppercase;
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    background: $color__mainnav;
 }
 .main-navigation ul {
     list-style: none;
@@ -155,8 +63,7 @@
     font-size: 1.4rem;
     text-decoration: none;
     line-height: 1.3em;
-    color: white;
-    color: hsl(0, 0%, 100%);
+    color: $color__navtext;
 }
 .main-navigation ul ul {
     position: absolute;
@@ -165,8 +72,7 @@
     display: none;
     float: left;
     padding: 0;
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background: lighten($color__mainnav, 10);
 }
 .main-navigation ul ul ul {
     left: 100%;
@@ -178,16 +84,13 @@
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
-    color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    color: $color__navtext;
+    background: lighten($color__mainnav, 10);
 }
 .main-navigation ul ul :hover > a {
 }
 .main-navigation ul ul a:hover {
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    background: lighten($color__mainnav, 20);
 }
 .main-navigation ul li:hover > ul {
     display: block;
@@ -196,20 +99,16 @@
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_item > a:hover,
 .main-navigation .current-menu-item > a:hover {
-    background: white;
-    color: #313131;
-    color: hsl(0, 0%, 19%);
+    background: $color__navcurrent;
+    color:darken($color__navtext, 80);
 }
 
 .main-navigation .current_page_ancestor {
-    background: #4d4d4d;
-    background: hsl(0, 0%, 30%);
+    background:  lighten($color__mainnav, 20);
 }
 
 .main-navigation ul ul .current_page_parent,
 .main-navigation .current_page_parent .current_page_item > a {
-    color: #fff;
-    color: hsl(0, 0%, 100%);
-    background: #313131;
-    background: hsl(0, 0%, 19%);
+    color: $color__navtext;
+    background:  $color__mainnav;
 } 

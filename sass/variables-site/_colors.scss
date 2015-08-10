@@ -21,7 +21,7 @@ $color__header: $blue;
 /*Nav*/
 $color__mainnav: $darkgrey;
 $color__navtext: $lightgrey;
-
+ $color__navcurrent: lighten($color__mainnav, 60);
 
 /*Buttons*/
 
