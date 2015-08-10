@@ -55,10 +55,31 @@ module.exports = function(grunt){
         } // my target
     }, // uglify
 
+//    /**
+//    * Compass task
+//    */
+//    compass: {
+//        dev: {
+//            options: {
+//                config: 'config.rb'
+//            } // options
+//        } // dev
+//    }, // compass
+
+
     /**
     *Watch task
     */
     watch: {
+        options: {livereload: true },
+        scripts: {
+            files: ['js/*.js'],
+            tasks: ['uglify']
+        }, // scripts
+        sass: {
+            files: ['sass/*.scss'],
+            tasks: ['compass:dev']
+        }, // sass
       css: {
         files: '**/*.scss',
         tasks: ['sass','autoprefixer']
@@ -69,6 +90,7 @@ module.exports = function(grunt){
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+ // grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.registerTask('default',['watch']);
