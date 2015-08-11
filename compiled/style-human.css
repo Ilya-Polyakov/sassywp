@@ -564,6 +564,7 @@ a:focus {
     display: block;
     float: none;
     background: #4d4d4d;
+    display: none;
   }
 
   .main-navigation ul ul a {

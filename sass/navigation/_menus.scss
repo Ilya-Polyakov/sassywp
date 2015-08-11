@@ -133,6 +133,8 @@
 		display: block;
 		float: none;
 		background:  lighten($color__mainnav, 10);
+                                        display: none;
+
 	}
 	
 	.main-navigation ul ul a { width: 100%; }
