@@ -132,7 +132,7 @@
 		left: 0;
 		display: block;
 		float: none;
-		background:  lighten($color__mainnav, 10);
+		background: $color__mainnav;
 	}
 	
 	.main-navigation ul ul a { width: 100%; }
