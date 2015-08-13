@@ -42,6 +42,12 @@
                                                       <?php  underscoresass_social_menu();
                                                       ?>
 		</nav><!-- #site-navigation -->
+                                 <!-- search bar -->
+                                    <div id="search-container" class="search-box-wrapper clear">
+                                        <div class="search-box clear">
+                                            <?php get_search_form(); ?>
+                                        </div>
+                                    </div>                 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

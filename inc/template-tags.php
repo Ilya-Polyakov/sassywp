@@ -280,9 +280,10 @@ function underscoresass_social_menu() {
 			'menu_id'         => 'menu-social-items',
 			'menu_class'      => 'menu-items',
 			'depth'           => 1,
+			'link_before'     => '<span class="screen-reader-text">',
+			'link_after'      => '</span>',
 			'fallback_cb'     => '',
 		)
 	);
     }
 }
-     

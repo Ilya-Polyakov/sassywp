@@ -26,8 +26,7 @@
     max-width: 75%;
     padding: 4rem;
     margin: 0 auto;
-    border: solid 1px #fff;
-    border: solid 1px hsla(0, 0%, 100%, .3);
+    border: solid 1px $color__titleboxbr;
 }
                     
 .site-branding a { 
@@ -36,10 +35,44 @@
 
 .site-title a,
 .site-description { 
-    color: #fff;
-    color: hsl(0, 0%, 100%);
+    color: $color__headertitle;
 }
-                    
+              
+/* Header search */
+
+input[type="search"] {
+    box-sizing: border-box;
+    width: 100%;
+      -webkit-appearance: none; // This fixes bar styling in Safari
+}
+
+.search-box-wrapper {
+    z-index: 2;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.search-box {
+    padding: 1em;
+    background: $color__searchbox;
+}
+
+.search-box .search-field {
+    max-width: 362px;
+    float: right;
+    padding: 1rem 2rem 1rem 4rem;
+    font-size: 20px;
+    font-size: 2rem;
+    background-color: #fff;
+    border: 0;
+}
+
+.error404 .search-submit,
+.search .search-submit,
+.search-box .search-submit { 
+    display: none; 
+}    
+
 /* Header responsive */
 @media screen and (max-width: 600px) {
     .site-branding { padding: 0; }
