@@ -17,19 +17,20 @@ $color__background-hr: #ccc;
 $color_site-main: $lightgrey;
 $color__sidebar: darken($blue, 20);
 
-/*Nav*/
-$color__mainnav: $darkgrey;
-$color__navtext: $lightgrey;
- $color__navcurrent: lighten($color__mainnav, 60);
- $color__navborder: $lightgrey; 
-
  /*Header*/
 
 $color__header: $blue;
 $color__headertitle: $white;
 $color__titleboxbr: $white;
-$color__searchbox: lighten($color__mainnav, 60);
 
+/*Nav*/
+$color__mainnav: $darkgrey;
+$color__navtext: $lightgrey;
+$color__navcurrent: lighten($color__mainnav, 60);
+$color__navborder: $lightgrey; 
+$color__searchbox:  lighten($color__mainnav, 10);
+$color__srchfld: $white;
+ 
 /*Buttons*/
 
 $color__background-button: lighten($black, 10);

@@ -139,7 +139,7 @@
 
 	.main-navigation ul a:hover,
 	.main-navigation ul ul a:hover {
-                        background: lighten($color__mainnav, 20);
+                        background: lighten($color__mainnav, 10);
 	}
 
 	.main-navigation .current_page_ancestor { background: inherit; }

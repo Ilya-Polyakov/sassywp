@@ -151,8 +151,8 @@ a img {
 --------------------------------------------------------------*/
 /*Colors*/
 /*Structure*/
-/*Nav*/
 /*Header*/
+/*Nav*/
 /*Buttons*/
 /*type*/
 /*--------------------------------------------------------------
@@ -573,7 +573,7 @@ a:focus {
 
   .main-navigation ul a:hover,
   .main-navigation ul ul a:hover {
-    background: #666666;
+    background: #4d4d4d;
   }
 
   .main-navigation .current_page_ancestor {
@@ -816,6 +816,31 @@ a:focus {
 }
 
 /* Header search */
+.search-toggle {
+  float: right;
+  width: 54px;
+  height: 54px;
+  padding: 12px;
+  padding-right: 20px;
+  color: #F1F1F1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+  background: #4d4d4d;
+}
+
+@media screen and (max-width: 600px) {
+  .search-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    padding: 12;
+  }
+}
 input[type="search"] {
   box-sizing: border-box;
   width: 100%;
@@ -830,7 +855,7 @@ input[type="search"] {
 
 .search-box {
   padding: 1em;
-  background: #cccccc;
+  background: #4d4d4d;
 }
 
 .search-box .search-field {
@@ -840,7 +865,6 @@ input[type="search"] {
   font-size: 20px;
   font-size: 2rem;
   background-color: #fff;
-  border: 0;
 }
 
 .error404 .search-submit,
