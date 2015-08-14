@@ -1,5 +1,6 @@
 
 
+
 .site-main {
                   background: $color_site-main; 
 }
@@ -10,6 +11,10 @@
 	overflow: hidden;
 	width: $size__site-sidebar;
                   background: $color__sidebar;
+}
+
+.site-content{
+    padding-bottom: 4em;
 }
 
 .site-content .widget-area {
