@@ -151,6 +151,7 @@ a img {
 /*Structure*/
 /*Header*/
 /*Nav*/
+/*Footer*/
 /*Buttons*/
 /*type*/
 /*--------------------------------------------------------------
@@ -757,16 +758,63 @@ a:focus {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 4em;
+  font-family: "Lato", sans-serif;
+  font-size: 15.84px;
+  font-size: 1.584rem;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
   max-width: 100%;
 }
+.widget a {
+  font-weight: 700;
+  color: #F1F1F1;
+}
+.widget ul, .widget ol {
+  padding: 0;
+  margin: -1em 0 0;
+  list-style-type: none;
+}
+.widget li {
+  padding: 1em 0 0;
+}
+.widget li li {
+  margin-left: 1.5em;
+}
+.widget li ul, .widget li ol {
+  margin-top: 0;
+}
+.widget .select {
+  max-width: 100%;
+}
+
+.widget-title {
+  margin-bottom: 1em;
+  font-size: 23.94px;
+  font-size: 2.394rem;
+  border-bottom: 2px solid #F1F1F1;
+}
 
 /* Search widget. */
 .widget_search .search-submit {
   display: none;
+}
+
+.footer-widgets {
+  margin: 0 auto;
+}
+
+.footer-widgets .widget-title,
+.footer-widgets .widget a:hover {
+  color: #F1F1F1;
+  border-color: #F1F1F1;
+}
+
+.footer-widgets .widget {
+  float: left;
+  width: 320px;
+  margin: 0 4rem 8rem 4rem;
 }
 
 /*--------------------------------------------------------------
@@ -934,6 +982,35 @@ input[type="search"] {
 
 .bypostauthor {
   display: block;
+}
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/* 
+    footer style. More footer styling in widgets.scss
+    Created on : Aug 14, 2015, 9:51:31 AM
+    Author     : ilya.polyakov
+*/
+.site-footer {
+  padding: 2em;
+  font-family: "Lato", sans-serif;
+  font-size: 15.84px;
+  font-size: 1.584rem;
+  color: #F1F1F1;
+  background: #072c4b;
+}
+
+.site-footer h1, .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5, .site-footer a, .site-footer p, .site-footer li, .site-footer table {
+  color: #F1F1F1;
+}
+
+.site-footer a {
+  color: #F1F1F1;
+}
+
+.site-info {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------

@@ -1,0 +1,27 @@
+/* 
+    footer style. More footer styling in widgets.scss
+    Created on : Aug 14, 2015, 9:51:31 AM
+    Author     : ilya.polyakov
+*/
+
+.site-footer{
+    padding: 2em;
+    font-family: $font__secondary;
+    @include font-size(.88);
+    color:$color__footertxt;
+    background:$color__footerbg;
+}
+
+.site-footer{
+    h1,h2,h3,h4,h5,a,p, li,table{
+        color:$color__footertxt;
+    }
+}
+
+.site-footer a{
+    color:$color__footertxt;
+}
+
+.site-info { 
+    text-align: center; 
+}

@@ -31,6 +31,10 @@ $color__navborder: $lightgrey;
 $color__searchbox:  lighten($color__mainnav, 10);
 $color__srchfld: $white;
  
+/*Footer*/
+$color__footertxt: $lightgrey;
+$color__footerbg: darken($blue,30);
+
 /*Buttons*/
 
 $color__background-button: lighten($black, 10);
@@ -44,6 +48,8 @@ $color__background-ins: #fff9c0;
 
 $color__headings: $black;
 $color__sidebar-txt: $lightgrey;
+
+
 
 
 $color__text-screen: #21759b;
