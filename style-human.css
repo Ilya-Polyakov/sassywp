@@ -494,6 +494,10 @@ and open the template in the editor.
     display: block;
     margin-bottom: 1em;
   }
+
+  .author .vcard {
+    margin-bottom: 1em;
+  }
 }
 @media screen and (max-width: 1319px) {
   .posted-on:before {
